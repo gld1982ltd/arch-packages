@@ -1,2 +1,1 @@
-# pkgbuilds
-pkgbuilds for packages I maintain on the aur
+packages I maintain on the aur
