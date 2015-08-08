@@ -29,16 +29,11 @@ pkgver() {
 	printf "%s" "$(git describe --abbrev=0 | sed 's/[A-Za-z]*//g;s/[!@#\$%^&*()/]//g')"
 }
 
-prepare() {
-}
-
 build() {
 	cd "$srcdir/${pkgname%-git}"
 	bake --configure install-directory="$pkgdir/"
 }
 
-check() {
-}
 
 package() {
 	cd "$srcdir/${pkgname%-git}"
